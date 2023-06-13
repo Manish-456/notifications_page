@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  /* PRIMARY  */
+  --DOT-COLOR: hsl(1, 90%, 64%);
+  --BLUE-COLOR: hsl(219, 85%, 26%);
+
+  /* NEUTRAL */
+  --BG-WHITE: hsl(0, 0%, 100%);
+  --BLUE-TEXT: hsl(219, 85%, 26%);
+  --TEXT-WHITE: hsl(0, 0%, 100%);
+  --LIGHT-GRAYISH-BLUE-1: hsl(210, 60%, 98%);
+  --LIGHT-GRAYISH-BLUE-2: hsl(205, 33%, 90%);
+  --GRAYISH-BLUE: hsl(219, 14%, 63%);
+  --DARK-GRAYISH-BLUE: hsl(219, 12%, 42%);
+  --VERY-DARK-BLUE: hsl(224, 21%, 14%);
+  --FF: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--BG-WHITE);
+  display: grid;
+  font-family: var(--FF);
+  margin: 0 auto;
+  max-width: 680px;
+  min-height: 100vh;
+  place-content: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Main Section */
+.main {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--GRAYISH-BLUE);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+/* notification_header */
+
+.notification__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: .7rem 0.6rem;
+}
+
+.notification__header__left {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 40px;
+}
+
+.notification__header .notification__header__title {
+  color: var(--DARK-GRAYISH-BLUE);
+  font-size: 1.4rem;
+}
+
+.notification__header .notification__count {
+  background-color: var(--BLUE-COLOR);
+  border-radius: 10px;
+  color: var(--TEXT-WHITE);
+  font-size: 1.1rem;
+  padding: 0.4em 0.2em;
+  text-align: center;
+}
+.main .header__mark {
+  cursor: pointer;
+  color: var(--GRAYISH-BLUE);
+}
+.main .notification__header .header__mark:hover {
+  color: var(--BLUE-COLOR);
+}
+.main .pointer {
+  cursor: pointer;
+}
+.main .notification_flex {
+  display: flex;
+  gap: 20px;
+}
+
+.flex {
+  justify-content: space-between;
+}
+
+/* notification_box */
+.notification__box {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1.3rem;
+  padding: 0.8rem;
+}
+
+.notification__recent {
+  background-color: var(--LIGHT-GRAYISH-BLUE-1);
+  border-radius: 5px;
+}
+
+.notification__box .figure img {
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+}
+
+.post_pic img:hover {
+  background-color: var(--LIGHT-GRAYISH-BLUE-2);
+  border: 1px solid var(--LIGHT-GRAYISH-BLUE-2);
+  border-radius: 5px;
+}
+
+.post {
+  cursor: pointer;
+  color: var(--DARK-GRAYISH-BLUE);
+  font-weight: bolder;
+  font-size: 1.01rem;
+}
+.post:hover {
+  color: var(--BLUE-TEXT);
+}
+
+.notification__username {
+  color: var(--DARK-GRAYISH-BLUE);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.notification__username:hover {
+  color: var(--BLUE-TEXT);
+}
+
+.notification__activity {
+  color: var(--GRAYISH-BLUE);
+  font-size: 0.9rem;
+  margin-left: 0.1em;
+}
+.dot {
+  background-color: var(--DOT-COLOR);
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin-top: 8px;
+  width: 8px;
+}
+
+.notification__time {
+  color: var(--GRAYISH-BLUE);
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.private_message {
+  border-radius: 10px;
+  border: 1px solid var(--GRAYISH-BLUE);
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 1rem;
+}
+.private_message .message {
+  color: var(--GRAYISH-BLUE);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  word-spacing: 1.3px;
+}
+
+.private_message:hover {
+  background-color: var(--LIGHT-GRAYISH-BLUE-2);
+}
+/* footer */
+.attribution {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
